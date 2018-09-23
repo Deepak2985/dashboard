@@ -1,0 +1,33 @@
+<div class="card" #card>
+    <div class="card-header">
+      <h6 class="mb-0">
+        Profile Completion
+        <button type="button" class=" btn btn-link collapsed  float-right" (click)='closeComponent(card)' aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        <button class="btn btn-link collapsed  float-right" data-toggle="collapse" data-target="#first" aria-expanded="true">
+          <i class="fa fa-chevron-down rotate"></i>
+        </button>
+      </h6>
+    </div>
+    <div id="first" class="collapse show">
+      <div class="card-body row">
+        <div class="col-md-7">
+          <canvas baseChart  [data]="doughnutChartData" 
+                        [labels]="doughnutChartLabels"
+                      [chartType]="doughnutChartType" [colors]="donutColors"
+                       [options]="doughnutChartOptions">
+                      </canvas>
+        </div>
+        <div class="col-md-5 align-left">
+            <span href="#">What's missing?</span><br>
+            <a href="#"><small>DUNS No.</small></a><br>
+            <a href="#"><small>Combany Logo</small></a><br>
+            <a href="#"><small>Tax ID</small></a><br>
+            <a href="#"><small>Form W9</small></a>
+        </div>
+
+        <div style="width:100%"><a href="" class="float-right"><small>Why should I complete profile?</small></a></div>
+      </div>
+    </div>
+  </div>

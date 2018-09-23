@@ -1,0 +1,66 @@
+<xv-search-panel></xv-search-panel>
+  <xv-cardlist></xv-cardlist>
+  <div class="row">
+    <div class="col-md-5 mt-4">
+        <xv-profile-completion></xv-profile-completion>
+    </div>
+    <div class="col-md-7 mt-4">
+        <xv-notifications></xv-notifications>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mt-4">
+        <div class="card" #card>
+            <div class="card-header">
+              <h6 class="mb-0">
+                RFQ Conversion to Order
+                <button type="button"  (click)="closeComponent(card)" class=" btn btn-link collapsed float-right" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                <button class="btn btn-link collapsed  float-right" data-toggle="collapse" data-target="#three" aria-expanded="true">
+                  <i class="fa fa-chevron-down rotate" aria-hidden="true"></i>
+                </button>
+              </h6>
+            </div>
+            <div id="three" class="collapse show">
+              <div class="card-body row">
+                <div class="col-md-6" *ngFor="let item of data">
+                  <canvas baseChart  [data]="item.doughnutChartData"  [chartType]="doughnutChartType"
+                   [colors]="item.donutColors"
+                 [options]="item.doughnutChartOptions"></canvas>
+                </div>
+                <span style="margin:auto; display:table;"><b>50%</b> Conversion Rate</span>
+              </div>
+              <div style="width:100%"><a href="" class="float-right mr-2 mb-2"><small>How to increase conversion rate?</small></a></div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6 my-4 ">
+        <div class="card" #card1>
+            <div class="card-header">
+              <h6 class="mb-0">
+               Invoice Create efficiency
+               <button type="button" class=" btn btn-link collapsed  float-right" (click)="closeComponent(card1)" aria-label="Close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <button class="btn btn-link collapsed  float-right" data-toggle="collapse" data-target="#four" aria-expanded="true">
+                  <i class="fa fa-chevron-down rotate"></i>
+                </button>
+              </h6>
+            </div>
+            <div id="four" class="collapse show">
+              <div class="card-body row text-center">
+                  <div class="col-md-6" *ngFor="let item of data">
+                      <canvas baseChart  [data]="item.doughnutChartData"  [chartType]="doughnutChartType"
+                       [colors]="item.donutColors"
+                     [options]="item.doughnutChartOptions"></canvas>
+                    </div>
+                    
+                    <span style="margin:auto; display:table;"><b>50%</b> Conversion Rate</span>
+              </div>
+              <div style="width:100%"><a href="" class="float-right mr-2 mb-2"><small>How to increase conversion rate?</small></a></div>
+            </div>
+          </div>
+    </div>
+  </div>

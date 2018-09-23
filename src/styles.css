@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #f8f9fa;
+}
+
+.card-header{
+    background-color: white;
+    padding: .5rem 1.25rem 0rem 1.25rem;
+}
+
+[data-toggle="collapse"][aria-expanded="true"] > .rotate
+        {
+            -webkit-transform: rotate(180deg);
+            -moz-transform:    rotate(180deg);
+            -ms-transform:     rotate(180deg);
+            -o-transform:      rotate(180deg);
+            transform:         rotate(180deg);
+            
+        }
+.card-header{
+    padding-right: 0;
+}
+ .collapsed, .btn-link, .btn-link:hover{
+    color:grey !important;
+}

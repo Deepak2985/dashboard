@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body text-center">
+        <div class="box" [style.backgroundColor]="item.boxBgColor">
+            <div class="align-item">{{item?.count}}</div>
+        </div>
+        <span class="title-text">{{item?.title}}</span>
+
+    </div>
+    <div [style.backgroundColor]="item.msgBgColor" style="min-height:45px;">
+        <span class="align-middle pl-2">{{item?.message}}</span>
+    </div>
+</div>

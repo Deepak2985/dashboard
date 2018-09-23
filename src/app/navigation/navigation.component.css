@@ -1,0 +1,50 @@
+nav{
+    border-bottom:4px solid #6bcdfd;
+    background-color:white;
+}
+.navbar{
+    padding: 0rem 1rem;
+}
+.navbar-nav > li > a {
+    margin: 0px 3px;
+    padding: 7px 7px 0px 7px;
+    text-align: center;
+    min-width: 70px;
+}
+.active{
+    background-color:#6bcdfd;
+    
+}
+
+.navbar-collapse  .active a{
+    color:white !important;
+}
+
+.navbar-collapse li a{
+    color:#60a1c1 !important;
+}
+
+.navbar-brand {
+    color:black !important;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width:991px){
+    .navbar{
+        padding: 0rem 1rem;
+        padding: .5rem 1rem;
+    }
+
+    #navbarSupportedContent{
+        margin-top:5px;
+    }
+
+    li>a>.fa{
+        float: left;
+    }
+    p{
+        display: inline-block;
+        margin-left: 10px;
+        float: left;
+    }
+}

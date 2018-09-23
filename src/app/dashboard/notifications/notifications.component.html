@@ -1,0 +1,47 @@
+<div class="card" #card>
+    <div class="card-header">
+      <h6 class="mb-0">
+        Notifications
+        <button type="button" (click)="closeComponent(card)" class=" btn btn-link collapsed  float-right" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        <button class="btn btn-link collapsed float-right" data-toggle="collapse" data-target="#two" aria-expanded="true">
+          <i class="fa fa-chevron-down rotate"></i>
+        </button>
+      </h6>
+    </div>
+    <div id="two" class="collapse show">
+
+      <div class="list-group">
+        <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h6>New RFQ# MAG9567</h6>
+          </div>
+
+          <small>Please respond to this RFQ by 21-May-2018</small>
+          <div>
+            <button type="button" class=" float-right btn btn-link">Mark as read</button>
+            <button type="button" class=" float-right btn btn-outline-primary btn-sm">Respond</button>
+
+          </div>
+        </div>
+        <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h6>New PO# MAG9567</h6>
+          </div>
+          <small class="text-muted">Please acknowledge and accept the PO </small>
+          <div>
+            <button type="button" class=" float-right btn btn-link">Mark as read</button>
+            <button type="button" class=" float-right btn btn-outline-primary btn-sm">Respond</button>
+
+          </div>
+
+        </div>
+        <div class="py-2  pr-3">
+            <button type="button" class=" float-right btn btn-outline-success btn-sm">Mark all as read</button>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
